@@ -17,11 +17,7 @@ class Login extends React.Component<any, any> {
                     </div>
 
                     <div className={`mt-2`}>
-                        <label htmlFor="password" className={`block`}>Password <span
-                            className={`text-red-700`}>*</span></label>
-                        <input type="password" id="password"
-                               className={`block border-2 outline-none focus:border-green-400 p-1 w-[300px]`}
-                               placeholder="password"/>
+                        <Input label={"Password"} name={"password"} type={"password"} placeholder={"password"} optional={true}/>
                     </div>
                     <button className={`py-2 px-3 rounded text-white mt-4 bg-blue-400`}>Sign in</button>
 
