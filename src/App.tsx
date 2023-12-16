@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./views/Home.tsx";
 import Signup from "./views/Signup.tsx";
 import Editor from "./views/Editor.tsx";
+import MyArticle from "./views/My-article.tsx";
 
 
 class App extends React.Component<any, any> {
@@ -29,6 +30,7 @@ class App extends React.Component<any, any> {
                         <Route path={"/login"} element={<Login/>}/>
                         <Route path={"/signup"} element={<Signup/>}/>
                         <Route path={"/editor"} element={<Editor/>}/>
+                        <Route path={"/my-article"} element={<MyArticle/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>

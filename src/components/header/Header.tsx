@@ -13,6 +13,7 @@ class Header extends React.Component<any, any> {
                         <li><Link to={"/"}>Article</Link></li>
                         <li><Link to={"/editor"}>Your Article</Link></li>
                         <li>Write new Article</li>
+                        <li><Link to={"/my-article"}>My Article</Link></li>
                         <li><Link to={"/login"}>Sign in</Link></li>
                         <li><Link to={"/signup"}>Sign up</Link></li>
                     </ul>

@@ -1,18 +1,15 @@
-import React from "react";
+
+import Input from "../components/input/Input.tsx";
 
 
-class Signup extends React.Component<any, any> {
-    render() {
+function Signup() {
+
         return (
             <section className={`flex justify-center`}>
                 <div className={`w-[500px] bg-cyan-100 flex flex-col items-center p-[50px] m-[30px] rounded-lg shadow-md`}>
                     <div className={`flex gap-3`}>
                         <div>
-                            <label htmlFor="firstname" className={`block`}>first name <span
-                                className={`text-red-700`}>*</span></label>
-                            <input type="text" id="firstname"
-                                   className={`block border-2 outline-none focus:border-green-400 p-1`}
-                                   placeholder="name"/>
+                            <Input label={"First Name"} name={"fname"} type={"text"} placeholder={"First name"} optional={true}/>
                         </div>
                         <div>
                             <label htmlFor="lastname" className={`block`}>last name <span
@@ -51,7 +48,7 @@ class Signup extends React.Component<any, any> {
                 </div>
             </section>
         );
-    }
+
 }
 
 export default Signup;

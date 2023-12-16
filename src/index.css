@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .main-btn{
+        @apply py-2 px-3 rounded text-white mt-4 bg-blue-400;
+    }
+}
