@@ -24,7 +24,11 @@ class Login extends React.Component<any, any> {
                                className={`block border-2 outline-none focus:border-green-400 p-1`}
                                placeholder="password"/>
                     </div>
-                    <button>Sign in</button>
+                    <button className={`py-2 px-3 rounded text-white mt-4 bg-blue-400`}>Sign in</button>
+
+                    <div className={`text-center mt-5`}>
+                        Do not have an Account <span className={`text-blue-600`}> Sign up now</span>
+                    </div>
                 </div>
             </section>
         );

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Header extends React.Component<any, any> {
     render() {
@@ -9,10 +10,11 @@ class Header extends React.Component<any, any> {
                         src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
                         alt="logo" className={`w-[70px]`}/>
                     <ul className={`flex gap-5`}>
-                        <li>Article</li>
+                        <li><Link to={"/"}>Article</Link></li>
                         <li>Your Article</li>
                         <li>Write new Article</li>
-                        <li>Create an account</li>
+                        <li><Link to={"/login"}>Sign in</Link></li>
+                        <li><Link to={"/signup"}>Sign up</Link></li>
                     </ul>
                 </nav>
             </header>
