@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer.tsx";
 import Login from "./views/Login.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./views/Home.tsx";
+import Signup from "./views/Signup.tsx";
 
 
 class App extends React.Component<any, any> {
@@ -25,6 +26,7 @@ class App extends React.Component<any, any> {
                     <Routes>
                         <Route path={"/"} element={<Home/>}/>
                         <Route path={"/login"} element={<Login/>}/>
+                        <Route path={"/signup"} element={<Signup/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>
