@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Input from "../components/input/Input.tsx";
 
 
 class Login extends React.Component<any, any> {
@@ -12,10 +13,7 @@ class Login extends React.Component<any, any> {
                         alt="logo" className={`w-[150px]`}/>
 
                     <div>
-                        <label htmlFor="email" className={`block`}>Email <span
-                            className={`text-red-700`}>*</span></label>
-                        <input type="email" id="email" className={`block border-2 outline-none focus:border-green-400 p-1 w-[300px]`}
-                               placeholder="Email"/>
+                        <Input label={"Email"} name={"email"} type={"email"} placeholder={"Email"} optional={true}/>
                     </div>
 
                     <div className={`mt-2`}>
@@ -28,7 +26,8 @@ class Login extends React.Component<any, any> {
                     <button className={`py-2 px-3 rounded text-white mt-4 bg-blue-400`}>Sign in</button>
 
                     <div className={`text-center mt-5`}>
-                        Do not have an Account <span className={`text-blue-600`}><Link to={"/signup"}> Sign up now</Link></span>
+                        Do not have an Account <span className={`text-blue-600`}><Link
+                        to={"/signup"}> Sign up now</Link></span>
                     </div>
                 </div>
             </section>
