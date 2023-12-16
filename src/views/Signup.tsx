@@ -26,7 +26,7 @@ class Signup extends React.Component<any, any> {
                         <label htmlFor="username" className={`block`}>username <span
                             className={`text-red-700`}>*</span></label>
                         <input type="text" id="username"
-                               className={`block border-2 outline-none focus:border-green-400 p-1`}
+                               className={`block border-2 outline-none focus:border-green-400 p-1 w-[400px]`}
                                placeholder="name"/>
                     </div>
 
@@ -34,7 +34,7 @@ class Signup extends React.Component<any, any> {
                         <label htmlFor="email" className={`block`}>Email <span
                             className={`text-red-700`}>*</span></label>
                         <input type="email" id="email"
-                               className={`block border-2 outline-none focus:border-green-400 p-1`}
+                               className={`block border-2 outline-none focus:border-green-400 p-1 w-[400px]`}
                                placeholder="Email"/>
                     </div>
 
@@ -42,7 +42,7 @@ class Signup extends React.Component<any, any> {
                         <label htmlFor="password" className={`block`}>Password <span
                             className={`text-red-700`}>*</span></label>
                         <input type="password" id="password"
-                               className={`block border-2 outline-none focus:border-green-400 p-1`}
+                               className={`block border-2 outline-none focus:border-green-400 p-1 w-[400px]`}
                                placeholder="password"/>
                     </div>
                     <button className={`py-2 px-3 rounded text-white mt-4 bg-blue-400`}>Sign Up</button>
